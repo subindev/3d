@@ -34,7 +34,7 @@ function GLTFModel() {
     // Load the GLTF model
     const loader = new GLTFLoader();
 
-    loader.load("gltf/AntiqueCamera.gltf", (gltf) => {
+    loader.load("gltf/Model.gltf", (gltf) => {
       const model = gltf.scene;
       modelRef.current = model;
       scene.add(model);
@@ -79,7 +79,7 @@ function GLTFModel() {
       });
 
       // Adjust the camera position as needed
-      camera.position.set(0, 5, 4);
+      camera.position.set(0, 1, 4);
 
       renderer.setClearColor(0xfffffff); // Set to a different color if needed
 
