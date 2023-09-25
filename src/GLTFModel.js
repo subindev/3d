@@ -62,7 +62,7 @@ function GLTFModel() {
       });
 
       document.addEventListener("mousemove", (event) => {
-        if (!isDragging) return;
+        // if (!isDragging) return;
 
         const { clientX, clientY } = event;
         const deltaX = (clientX - previousMousePosition.current.x) * sensitivity;
@@ -79,9 +79,9 @@ function GLTFModel() {
       });
 
       // Adjust the camera position as needed
-      camera.position.set(0, 0, 10);
+      camera.position.set(0, 5, 4);
 
-      renderer.setClearColor(0x1e074e); // Set to a different color if needed
+      renderer.setClearColor(0xfffffff); // Set to a different color if needed
 
       // Render the scene
       renderer.render(scene, camera);
