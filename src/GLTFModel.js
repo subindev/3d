@@ -68,13 +68,8 @@ function GLTFModel() {
         const deltaX = (clientX - previousMousePosition.current.x) * sensitivity;
         const deltaY = (clientY - previousMousePosition.current.y) * sensitivity;
 
-        // Rotate the entire model
-        modelRef.current.rotation.x += deltaY;
+        // Rotate the model only on the Y-axis (horizontal rotation)
         modelRef.current.rotation.y += deltaX;
-
-        // Rotate the camera as well
-        cameraRef.current.rotation.x += deltaY;
-        cameraRef.current.rotation.y += deltaX;
 
         previousMousePosition.current.x = clientX;
         previousMousePosition.current.y = clientY;
