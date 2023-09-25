@@ -86,7 +86,7 @@ function GLTFModel() {
       // Adjust the camera position as needed
       camera.position.set(0, 0, 10);
 
-      renderer.setClearColor(0xffffff); // Set to a different color if needed
+      renderer.setClearColor(0x1e074e); // Set to a different color if needed
 
       // Render the scene
       renderer.render(scene, camera);
